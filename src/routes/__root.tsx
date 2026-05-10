@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { SiteLayout } from "@/components/SiteLayout";
 
 function NotFoundComponent() {
   return (
@@ -72,11 +73,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Star Plumbing & Water Heater — Bay Area Plumber" },
+      { name: "description", content: "Family-run plumbing & water heater service in the Bay Area. 5-star rated, open 24 hours. Call (510) 833-8801." },
+      { property: "og:title", content: "Star Plumbing & Water Heater" },
+      { property: "og:description", content: "Honest, reliable plumbing & water heater service. Open 24 hours." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
